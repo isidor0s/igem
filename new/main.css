@@ -1,0 +1,28 @@
+/*.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #303030;
+    opacity: 75%;
+    padding: 0px 40px 0px 40px;
+    color: white;
+}
+.header-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.header-right a{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 49px;
+    color: white;
+    text-decoration: none;
+}
+.navbar{
+    height: 80px;
+}
+.navbar img svg{
+    object-fit: cover;
+}*/
+
