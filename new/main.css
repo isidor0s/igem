@@ -26,3 +26,24 @@
     object-fit: cover;
 }*/
 
+body, html {
+    height: 100%;
+}
+  
+.bgImage {
+    background-image: url("Lofi\ Image.svg");
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0%;
+}
+
+
+.card {
+    width: 400px;
+    height: 400px;
+    padding: 0%;
+    margin: 1em;
+}
