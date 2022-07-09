@@ -29,10 +29,21 @@
 body, html {
     height: 100%;
 }
-  
+navbar{
+    z-index: 0;
+}
 .bgImage {
     background-image: url("Lofi\ Image.svg");
     height: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0%;
+}
+.bgImage2 {
+    background-image: url("blankpick.svg");
+    height: 30%;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,3 +58,4 @@ body, html {
     padding: 0%;
     margin: 1em;
 }
+
