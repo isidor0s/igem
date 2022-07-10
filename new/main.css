@@ -33,7 +33,7 @@ navbar{
     z-index: 0;
 }
 .bgImage {
-    background-image: url("Lofi\ Image.svg");
+    background-image: url("Images/Lofi\ Image.svg");
     height: 100%;
     position: relative;
     background-position: center;
@@ -41,20 +41,18 @@ navbar{
     background-size: cover;
     padding: 0%;
 }
+
 .bgImage2 {
-    background-image: url("blankpick.svg");
-    height: 30%;
+    background-image: url("Images/blankpick.svg");
+    height: 200px;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0%;
 }
-
 
 .card {
     width: 300px;
     height: 300px;
-    padding: 0%;
-    margin: 1em;
+    margin: auto;
 }
