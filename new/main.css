@@ -1,37 +1,46 @@
-/*.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #303030;
-    opacity: 75%;
-    padding: 0px 40px 0px 40px;
-    color: white;
-}
-.header-right{
-    display: flex;
-    justify-content: flex-end;
-}
-.header-right a{
-    font-family: 'Open Sans';
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 49px;
-    color: white;
-    text-decoration: none;
-}
-.navbar{
-    height: 80px;
-}
-.navbar img svg{
-    object-fit: cover;
-}*/
-
 body, html {
     height: 100%;
 }
-navbar{
-    z-index: 0;
+
+.navigation-menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color:rgba(53, 53, 53, 0.80);
 }
+
+.navigation-menu a, .navigation-menu a:hover{
+    color: white;
+}
+
+/* -------------------- NavBar Hover Animation(Test) -------------------- */
+
+.stroke ul li a, .stroke ul li a:after, .stroke ul li a:before {
+    transition: all .5s;
+}
+
+.stroke ul li a {
+    position: relative;
+}
+
+.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: white;
+    height: 1px;
+}
+
+.stroke ul li a:hover:after {
+    width: 100%;
+}
+
 .bgImage {
     background-image: url("Images/Lofi\ Image.svg");
     height: 100%;
@@ -42,17 +51,9 @@ navbar{
     padding: 0%;
 }
 
-.bgImage2 {
-    background-image: url("Images/blankpick.svg");
-    height: 200px;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .card {
     width: 300px;
     height: 300px;
     margin: auto;
 }
+
