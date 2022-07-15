@@ -10,21 +10,49 @@ body, html {
     background-color:rgba(53, 53, 53, 0.80);
 }
 
-.navigation-menu a, .navigation-menu a:hover{
+/* -------------------- NavBar Menu Dropdowns -------------------- */
+
+.dropdown-button {
+  border: none;
+  background-color: inherit;
+}
+
+.navigation-menu a, .navigation-menu a:hover, 
+.navigation-menu .dropdown-button {
     color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  background-color:rgb(53, 53, 53);
+  padding: 12px 16px;
+}
+
+.dropdown-content a:hover {
+  background-color: gray;
+}
+
+.--show {
+  display: block;
 }
 
 /* -------------------- NavBar Hover Animation(Test) -------------------- */
 
-.stroke ul li a, .stroke ul li a:after, .stroke ul li a:before {
+.stroke ul li, .stroke ul li:after, .stroke ul li:before {
     transition: all .5s;
 }
 
-.stroke ul li a {
+.stroke ul li {
     position: relative;
 }
 
-.stroke ul li a:after {
+.stroke ul li:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -37,7 +65,7 @@ body, html {
     height: 1px;
 }
 
-.stroke ul li a:hover:after {
+.stroke ul li:hover:after {
     width: 100%;
 }
 
