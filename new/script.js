@@ -2,6 +2,7 @@
 /* Navigation Menu Dropdowns */
 
 $('#project').click(function() {
+    console.log('er')
     project = document.getElementById('project-content');
     closeMenuDropdownsExceptSelf(project);
     project.classList.toggle('--show');
@@ -55,8 +56,6 @@ window.onclick = function(event) {
 
 const menuHamBtn = document.querySelector('.menu-toggle-button')
 
-menuHamBtn.addEventListener('click', handleClick);
-
 const handleClick = (e) => {
     const toggleMenu = () => menuHamBtn.classList.toggle('open');
     if(!menuHamBtn.classList.contains('open')){
@@ -74,3 +73,6 @@ const addOffClick = (e, cb) => {
     }
     document.addEventListener('click', offClick);
 }
+
+menuHamBtn.addEventListener('click', handleClick);
+
