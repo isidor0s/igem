@@ -2,7 +2,6 @@
 /* Navigation Menu Dropdowns */
 
 $('#project').click(function() {
-    console.log('er')
     project = document.getElementById('project-content');
     closeMenuDropdownsExceptSelf(project);
     project.classList.toggle('--show');
